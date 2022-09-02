@@ -1,0 +1,80 @@
+.mobile-menu-button--open {
+  display: block;
+  width: 20px;
+  height: 12px;
+  line-height: 0;
+  cursor: pointer;
+
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.mobile-menu-button--close {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+
+    padding: 0;
+    line-height: 0;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+
+    padding: 0;
+    line-height: 0;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+}
+
+.mobile-menu-button--buy-now {
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+    align-items: baseline;
+    cursor: pointer;
+
+    padding: 12px 30px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: var(--accent-color);
+    margin: 40px 0 0;
+    max-width: 152px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu-button__icon {
+  display: inline-block;
+  margin-left: 14px;
+}

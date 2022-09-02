@@ -1,8 +1,10 @@
 @import './common';
 @import './utils/variables';
 @import './utils/placeholders';
-// @import './example';
-@import './layouts/header';
+@import './layouts/hero-header';
+@import './layouts/mobile-menu-button';
+@import './layouts/logo';
+@import './layouts/mobile-menu';
 @import './layouts/products';
 @import './layouts/about';
 @import './layouts/advantages';

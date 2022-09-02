@@ -1,39 +1,38 @@
-
 :root {
-    // Fonts
-    --font-general: Montserrat, sans-serif;
-    --font-title: Seymour One, sans-serif;
+  // Fonts
+  --font-general: Montserrat, sans-serif;
+  --font-title: Seymour One, sans-serif;
 
-    // Accent color
-    --accent-color: #F8D24E;
+  // Accent color
+  --accent-color: #f8d24e;
 
-    //Text colors
-    --primary-lighttext-color: #FCFCFC;
-    --secondary-lighttext-color: #FFF;
+  //Text colors
+  --primary-lighttext-color: #fcfcfc;
+  --secondary-lighttext-color: #fff;
 
-    --primary-darktext-color: #000;
-    --secondary-darktext-color: #131313;
+  --primary-darktext-color: #000;
+  --secondary-darktext-color: #131313;
 
-    --copyright-text-color: #7A7A7A;
+  --copyright-text-color: #7a7a7a;
 
-    //Section's background color
-    --primary-background-color: #84A178;
+  //Section's background color
+  --primary-background-color: #84a178;
 
-    //Product-cards background
-    --product-green-background: #AEC6A5;
-    --product-opacity-green-background: rgba(156, 190, 143, 0.7);
+  //Product-cards background
+  --product-green-background: #aec6a5;
+  --product-opacity-green-background: rgba(156, 190, 143, 0.7);
 
-    --product-yellow-background: #EFD478;
-    --product-opacity-yellow-background: rgba(248, 210, 78, 0.7);
+  --product-yellow-background: #efd478;
+  --product-opacity-yellow-background: rgba(248, 210, 78, 0.7);
 
-    --product-red-background: #D6936D;      //Also use in Contacts section as text color in Company representatives
-    --product-opacity-red-background: rgba(213, 117, 63, 0.7);
+  --product-red-background: #d6936d; //Also use in Contacts section as text color in Company representatives
+  --product-opacity-red-background: rgba(213, 117, 63, 0.7);
 
-    //Input field background color
-    --input-background: rgba(248, 210, 78, 0.1);
+  //Input field background color
+  --input-background: rgba(248, 210, 78, 0.1);
 
-    // Buttons color
+  // Buttons color
 
-    --button-hover-collor: #0A8817;
-    --button-disable-color: #ABABAB;
+  --button-hover-collor: #0a8817;
+  --button-disable-color: #ababab;
 }
