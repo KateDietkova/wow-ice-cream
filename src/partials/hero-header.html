@@ -1,0 +1,71 @@
+<Header class="header">
+    <div class="container container-header">
+        <a class="logo" href="./index.html">
+            <picture>
+                <source
+                    srcset="./images/logo/logo-mobile/logo-mobile.png 1x, ./images/logo/logo-mobile/logo-mobile@2x.png 2x"
+                    media="(max-width: 767px)" />
+                <source
+                    srcset="./images/logo/logo-tablet/logo-tablet.png 1x, ./images/logo/logo-tablet/logo-tablet@2x.png 2x"
+                    media="(max-width: 1199px)" />
+                <source
+                    srcset="./images/logo/logo-desktop/logo-desktop.png 1x, ./images/logo/logo-desktop/logo-desktop@2x.png 2x"
+                    media="(min-width: 1200px)" />
+                <img class="logo__img" src="./images/logo/logo-mobile/logo-mobile.png" alt="Logo">
+        </a>
+        <button type="button" class="mobile-menu-button" data-menu-open>
+            <svg width="20" height="12">
+                <use class="" href="./images/mobile-menu/burger.svg#burger"></use>
+            </svg>
+        </button>
+</Header>
+
+<main>
+
+    <section class="hero">
+        <div class="container container-hero">
+            <div class="hero-title-container">
+                <h1 class="hero-title">
+                    ice cream made with <span class="hero-title hero-title--uppercase">passion</span>
+                </h1>
+                <ul class="hero-list">
+                    <li class="hero-item">
+                        <a class="hero-link hero-link--products" href="#products">Products</a>
+                    </li>
+                    <li>
+                        <a class="hero-link hero-link--how-made" href="#how-made">How it’s made?</a>
+                    </li>
+                </ul>
+                <!-- ====== DOTS ====== -->
+                <picture>
+                    <source
+                        srcset="./images/hero/mobile-dots/mobile-dots.png 1x, ./images/hero/mobile-dots/mobile-dots@2x.png 2x"
+                        media="(max-width: 767px)" />
+                    <source
+                        srcset="./images/hero/tablet-dots/tablet-dots.png 1x, ./images/hero/tablet-dots/tablet-dots@2x.png 2x"
+                        media="(max-width: 1199px)" />
+                    <source
+                        srcset="./images/hero/desktop-dots/desktop-dots.png 1x, ./images/hero/desktop-dots/desktop-dots@2x.png 2x"
+                        media="(min-width: 1200px)" />
+                    <img class="hero-image hero-image--dots" src="./images/hero/mobile-dots/mobile-dots.png"
+                        alt="Many dots">
+                </picture>
+                <!-- ====== ICECREAM ====== -->
+                <picture>
+                    <source
+                        srcset="./images/hero/ice-cream-mobile/ice-cream-mobile.png 1x, ./images/hero/ice-cream-mobile/ice-cream-mobile@2x.png 2x"
+                        media="(max-width: 767px)" />
+                    <source
+                        srcset="./images/hero/ice-cream-tablet/ice-cream-tablet.png 1x, ./images/hero/ice-cream-tablet/ice-cream-tablet.png 2x"
+                        media="(max-width: 1199px)" />
+                    <source
+                        srcset="./images/hero/ice-cream-desktop/ice-cream-desktop.png 1x, ./images/hero/ice-cream-desktop/ice-cream-desktop.png 2x"
+                        media="(min-width: 1200px)" />
+                    <img class="hero-image hero-image--icecream"
+                        src="./images/hero/ice-cream-mobile/ice-cream-mobile.png" alt="Ice cream">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+</main>
