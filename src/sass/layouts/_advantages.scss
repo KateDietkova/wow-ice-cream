@@ -22,6 +22,42 @@
   color: #ffffff;
 }
 
+.advantages-uppertitle::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f8d24e;
+}
+
+.advantages-uppertitle-1::before {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/advantages icons/cow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages-uppertitle-2::before {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/advantages icons/weight.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages-uppertitle-3::before {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/advantages icons/ice-cream.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .advantages-text {
   font-style: normal;
   font-weight: 700;
