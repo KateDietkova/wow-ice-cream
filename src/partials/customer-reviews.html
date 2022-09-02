@@ -2,29 +2,56 @@
     <div class="container">
         <!-- Swiper -->
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="./images/customer-1.jpg" alt="Customer 1">
+            <ul class="swiper-list swiper-wrapper">
+                <li class="swiper-list__item swiper-slide">
+                    <div class="swiper-list__image-container">
+                        <picture>
+                            <source srcset="./images/customer@1x-85.jpg 1x, ./images/customer@2x-170.jpg 2x" />
+                            <img src="./images/customer@1x-85.jpg" alt="Customer 1">
+                        </picture>
                     </div>
-                    <div class="reviews-text">
-                        <p>I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles!
-                            In addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
+                    <div class="swiper-list__reviews-container">
+                        <p class="swiper-list__reviews-text">
+                            <span class="swiper-list__reviews-text--block">I love visiting your cafe.</span>
+                            You prepare the most delicious ice cream in Los Angeles!
+                            <span class="swiper-list__reviews-text--block">In addition, you have beautiful serving, cozy atmosphere and polite staff.</span>
+                        </p>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <p>Description</p>
-                </div>
-                <div class="swiper-slide">
-                    <p>Description</p>
-                </div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-            </div>
+                    <p class="swiper-list__customer-meta">Emily, Los Angeles</p>
+                </li>
+                <li class="swiper-list__item swiper-slide">
+                    <div class="swiper-list__image-container">
+                        <picture>
+                            <source srcset="./images/customer@1x-85.jpg 1x, ./images/customer@2x-170.jpg 2x" />
+                            <img src="./images/customer@1x-85.jpg" alt="Customer 1">
+                        </picture>
+                    </div>
+                    <div class="swiper-list__reviews-container">
+                        <p class="swiper-list__reviews-text">
+                            <span class="swiper-list__reviews-text--block">I love visiting your cafe.</span>
+                            You prepare the most delicious ice cream in Los Angeles!
+                            <span class="swiper-list__reviews-text--block">In addition, you have beautiful serving, cozy atmosphere and polite staff.</span>
+                        </p>
+                    </div>
+                    <p class="swiper-list__customer-meta">Emily, Los Angeles</p>
+                </li>
+                <li class="swiper-list__item swiper-slide">
+                    <div class="swiper-list__image-container">
+                        <picture>
+                            <source srcset="./images/customer@1x-85.jpg 1x, ./images/customer@2x-170.jpg 2x" />
+                            <img src="./images/customer@1x-85.jpg" alt="Customer 1">
+                        </picture>
+                    </div>
+                    <div class="swiper-list__reviews-container">
+                        <p class="swiper-list__reviews-text">
+                            <span class="swiper-list__reviews-text--block">I love visiting your cafe.</span>
+                            You prepare the most delicious ice cream in Los Angeles!
+                            <span class="swiper-list__reviews-text--block">In addition, you have beautiful serving, cozy atmosphere and polite staff.</span>
+                        </p>
+                    </div>
+                    <p class="swiper-list__customer-meta">Emily, Los Angeles</p>
+                </li>
+            </ul>
             <!-- Swiper pagination-->
             <div class="swiper-pagination"></div>
         </div>
