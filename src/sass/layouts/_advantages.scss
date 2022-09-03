@@ -1,4 +1,6 @@
 .advatages {
+  @extend %section !optional;
+  padding-top: 0;
   background-color: var(--primary-background-color);
   display: flex;
   flex-wrap: wrap;
