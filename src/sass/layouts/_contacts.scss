@@ -1,9 +1,8 @@
-.section--no-padding-top {
-    padding-top: 0;
-}
-
 .contacts {
+    margin-top: 394px;
     background-color: var(--primary-background-color);
+    padding-top: 0;
+    padding-bottom: 0;  
 }
 
 .addresses__list {
@@ -17,6 +16,7 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 }
+
 
 .addresses__category {
     display: inline-block;
