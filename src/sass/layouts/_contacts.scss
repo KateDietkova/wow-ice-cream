@@ -21,13 +21,15 @@
 .addresses__category {
     display: inline-block;
     margin-bottom: 20px;
+    min-width: 80px;
 
-    padding: 0 23px;
+    padding: 0 21px;
 
     font-weight: 500;
     font-size: 12px;
     line-height: 1.83;
     letter-spacing: 0.04em;
+    text-align: center;
     text-transform: uppercase;
 
     color: var(--primary-lighttext-color);
@@ -208,7 +210,7 @@
     .addresses__category {
         margin-bottom: 32px;
 
-        padding: 0 11px;
+        padding: 0 10px;
         min-width: 73px;
         
         font-size: 16px;
