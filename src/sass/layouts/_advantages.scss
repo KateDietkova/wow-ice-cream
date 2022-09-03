@@ -13,8 +13,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-right: auto;
-  margin-left: auto;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -23,8 +21,7 @@
   }
 }
 
-.advantages-uppertitle {
-  font-style: normal;
+.advantages-list__uppertitle {
   font-weight: 700;
   font-size: 48px;
   line-height: calc(59px / 48px);
@@ -32,22 +29,22 @@
   letter-spacing: 0.04em;
   margin-bottom: 18px;
   color: var(--primary-lighttext-color);
+
+  &::before {
+    content: '';
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
 }
 
-.advantages-uppertitle::before {
-  content: '';
-  display: flex;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  background-position: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 16px;
-}
-
-.advantages-uppertitle-1::before {
+.advantages-list__uppertitle--cow::before {
   display: flex;
   width: 50px;
   height: 50px;
@@ -56,7 +53,7 @@
   background-repeat: no-repeat;
 }
 
-.advantages-uppertitle-2::before {
+.advantages-list__uppertitle--weight::before {
   display: flex;
   width: 50px;
   height: 50px;
@@ -65,9 +62,8 @@
   background-repeat: no-repeat;
 }
 
-.advantages-uppertitle-3::before {
+.advantages-list__uppertitle--ice-cream::before {
   display: flex;
-  justify-content: center;
   bottom: 100px;
   width: 50px;
   height: 50px;
@@ -75,28 +71,24 @@
   background-repeat: no-repeat;
 }
 
-.advantages-text {
-  display: block;
-  justify-content: center;
+.advantages-list__text {
   text-align: center;
-  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 12px;
-  line-height: 170%;
+  line-height: 1.7;
   color: var(--primary-lighttext-color);
-  margin-bottom: 28px;
-  margin-right: auto;
-  margin-left: auto;
+
   @media screen and (max-width: 767px) {
     max-width: 230px;
+    margin-bottom: 28px;
   }
 
   @media screen and (min-width: 768px) {
     max-width: 138px;
-    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     max-width: 230px;
-    margin-bottom: 0;
   }
 }
