@@ -4,11 +4,21 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 28px;
 }
 
 .advantages-list {
   @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 76px;
+  }
 }
 
 .advantages-uppertitle {
@@ -19,20 +29,24 @@
   text-align: center;
   letter-spacing: 0.04em;
   margin-bottom: 18px;
-  color: #ffffff;
+  color: var(--primary-lighttext-color);
 }
 
 .advantages-uppertitle::before {
   content: '';
-  display: block;
+  display: flex;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #f8d24e;
+  background-color: var(--accent-color);
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
 }
 
 .advantages-uppertitle-1::before {
-  display: block;
+  display: flex;
   width: 50px;
   height: 50px;
   background-image: url('../images/advantages icons/cow.png');
@@ -41,7 +55,7 @@
 }
 
 .advantages-uppertitle-2::before {
-  display: block;
+  display: flex;
   width: 50px;
   height: 50px;
   background-image: url('../images/advantages icons/weight.png');
@@ -50,21 +64,37 @@
 }
 
 .advantages-uppertitle-3::before {
-  display: block;
+  display: flex;
+  justify-content: center;
+  bottom: 100px;
   width: 50px;
   height: 50px;
   background-image: url('../images/advantages icons/ice-cream.png');
-  background-position: center;
   background-repeat: no-repeat;
 }
 
 .advantages-text {
+  display: block;
+  justify-content: center;
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 170%;
-  text-align: center;
-  max-width: 230px;
+  color: var(--primary-lighttext-color);
+  margin-bottom: 28px;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    max-width: 230px;
+  }
 
-  color: #fcfcfc;
+  @media screen and (min-width: 768px) {
+    max-width: 138px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 230px;
+    margin-bottom: 0;
+  }
 }
