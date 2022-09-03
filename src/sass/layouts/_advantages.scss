@@ -1,5 +1,5 @@
 .advatages {
-  @extend %section !optional;
+  @extend .section;
   padding-top: 0;
   background-color: var(--primary-background-color);
   display: flex;
