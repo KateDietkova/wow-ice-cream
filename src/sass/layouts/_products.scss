@@ -79,7 +79,7 @@
 
 @media screen and (min-width: 768px) {
   .products__card {
-    flex-basis: calc((100% - 3 * 16px) / 3);
+    flex-basis: calc((100% - 2 * 16px) / 3);
     padding-top: 166px;
     padding-right: 62px;
     padding-left: 62px;
@@ -89,7 +89,7 @@
 
 @media screen and (min-width: 1200px) {
   .products__card {
-    flex-basis: calc((100% - 3 * 32px) / 3);
+    flex-basis: calc((100% - 2 * 32px) / 3);
     padding-right: 40px;
     padding-left: 40px;
     padding-bottom: 120px;
