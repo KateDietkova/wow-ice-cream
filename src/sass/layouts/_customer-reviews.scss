@@ -28,12 +28,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
-    flex-basis: calc((100% - 20px));
-
-    &:last-child {
-        margin-right: 0;
-    }
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -41,6 +37,11 @@
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85px;
+    height: 85px;
+
 }
 
 .swiper-list__reviews-container {
@@ -108,5 +109,10 @@
         width: 12px;
         height: 12px;
         background-color: var(--primary-background-color);
+        margin-right: 18px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }

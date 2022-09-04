@@ -401,10 +401,10 @@ button.swiper-pagination-bullet {
     transition: .2s transform, .2s top;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
-}
+// .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+// .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+//     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+// }
 
 .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
