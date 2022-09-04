@@ -1,0 +1,118 @@
+//Swiper styles
+
+.swiper {
+    background-color: transparent;
+
+    @media screen and (max-width: 767px) {
+        max-width: 300px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+    }
+}
+
+.swiper-list {
+    @extend %list;
+    display: flex;
+    margin-bottom: 14px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+}
+
+.swiper-list__item {
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.swiper-list__image-container {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85px;
+    height: 85px;
+
+}
+
+.swiper-list__reviews-container {
+    border-radius: 10px;
+    background-color: #84A178;
+    padding: 40px 40px 34px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        padding: 30px 80px;
+        border-radius: 24px;
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 44px 109px;
+        border-radius: 24px;
+    }
+}
+
+.swiper-list__reviews-text {
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
+
+    color: var(--primary-lighttext-color);
+
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        letter-spacing: 0.04em;
+    }
+}
+
+.swiper-list__reviews-text--block {
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+}
+
+
+.swiper-list__customer-meta {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+    text-align: center;
+
+    color: var(--primary-darktext-color);
+}
+
+//Pagination
+.swiper-pagination {
+    position: static;     //Because default pagination styles have position: absolute
+}
+
+.swiper-pagination-bullet {
+
+    .swiper-pagination & {
+        width: 12px;
+        height: 12px;
+        background-color: var(--primary-background-color);
+        margin-right: 18px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
