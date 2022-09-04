@@ -1,5 +1,5 @@
-//Buttons Readme, Our locations, Buy now
-.button {
+//Default buttons style
+.button-default {
     display: inline-flex;
     align-items: center;
     border-radius: 10px;
@@ -7,7 +7,6 @@
     padding: 12px 34px;
     min-width: 152px;
 
-    background-color: var(--accent-color);
     color: var(--primary-darktext-color);
    
 
@@ -17,7 +16,16 @@
     line-height: 1.29;
     cursor: pointer;
 
+}
+
+//Buttons Readme, Our locations, Buy now
+
+.button {
+    @extend .button-default;
+    background-color: var(--accent-color);
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
     &:hover {
         background-color: var(--button-hover-color);
@@ -35,10 +43,10 @@
 
 // button Franchise
 .button-franchise {
-    @extend .button;
+    @extend .button-default;
     background-color: transparent;
     border: 2px solid var(--accent-color);
-    padding: 12px 46px;
+    padding: 10px 46px;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -47,7 +55,6 @@
     }
 
     &:focus {
-        color: var(--primary-lighttext-color);
         border-color: var(--button-hover-color);
     }
 
@@ -62,7 +69,7 @@
 .button-products {
     @extend %link;
     @extend .button-franchise;
-    padding: 12px 34px;
+    padding: 10px 34px;
 
     @media screen and (max-width: 1199px) {
         min-width: 62px;
