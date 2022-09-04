@@ -55,6 +55,7 @@
     }
 
     &:focus {
+        color: var(--primary-lighttext-color);
         border-color: var(--button-hover-color);
     }
 
