@@ -5,6 +5,49 @@ body {
 
     font-family: var(--font-general);
 
+    background-image: url('../images/background-icecream@1_mobile-320.png');
+
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        & {
+            background-image: url('../images/background-icecream@2x_mobile-640.png');
+        }
+    }
+
+
+    @media screen and (min-width: 481px) {
+        background-image: url('../images/background-icecream@1_tablet-704.png');
+
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url('../images/background-icecream@2_tablet-1408.png');
+            }
+        }
+    }
+
+
+    @media screen and (min-width: 769px) {
+        background-image: url('../images/background-icecream@1_desktop-1200.png');
+
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url('../images/background-icecream@2_desktop-2400.png');
+            }
+        }
+    }
+
 }
 
 h1,
