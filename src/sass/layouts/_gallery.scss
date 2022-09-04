@@ -1,0 +1,24 @@
+.gallery {
+  position: relative;
+  outline: dotted;
+  background-color: green;
+}
+.gallery-image__list {
+  list-style-type: none;
+}
+.gallery-image__item {
+}
+
+.gallery-image__block {
+}
+
+.gallery-image__picture {
+  display: flex;
+  justify-content: center;
+  margin-top: -175px;
+}
+.gallery-image__img {
+  border-radius: 24px;
+  width: 1010px;
+  height: 420px;
+}

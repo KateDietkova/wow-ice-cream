@@ -1,14 +1,16 @@
 <!-- Секция с картинками -->
 <section class="section gallery">
-  <ul class="gallery-image__list">
-    <li class="gallery-image__item">
-      <div class="gallery-image__block">
-        <picture>
-          <source srcset="./images/gallery/ice-cream-@1x.jpg, ./images/gallery/ice-cream-@2x.jpg" type="image/webp"
-            width="1010px">
-          <img src="./images/gallery/ice-cream-@1x.jpg" alt="ice cream 1">
-        </picture>
-      </div>
-    </li>
-  </ul>
+  <div class="container">
+    <ul class="gallery-image__list">
+      <li class="gallery-image__item">
+        <div class="gallery-image__block">
+          <picture class="gallery-image__picture">
+            <source srcset="./images/gallery/ice-cream-@1x.jpg, ./images/gallery/ice-cream-@2x.jpg" type="image/webp"
+              width="1010px">
+            <img class="gallery-image__img" src="./images/gallery/ice-cream-@1x.jpg" alt="ice cream 1">
+          </picture>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
