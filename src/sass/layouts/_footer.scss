@@ -1,5 +1,8 @@
 .footer {
     background-color: var(--primary-background-color);
+    @media screen and (min-width:1200px){
+        padding-top: 60px;
+      }    
 }
 
 .container--footer {
