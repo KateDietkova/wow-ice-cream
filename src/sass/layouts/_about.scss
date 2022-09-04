@@ -16,10 +16,6 @@
             }
 }
 
-.about {
-    
-    padding-top: 60px;
-}
 
 
 .about__label {
@@ -215,6 +211,18 @@
         
     .technology__button {
         margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+
+        &:hover {
+            color: var(--primary-lighttext-color);
+            fill: var(--primary-lighttext-color);
+        }
+
+
+
 
         @media screen and (min-width: 768px) {
             margin-top: 48px;
@@ -222,4 +230,10 @@
         }
 
 
+    }
+
+    .about__button-icon {
+        display: inline-block;
+        margin-left: 14px;
+        fill: var(--primary-lighttext-color);
     }
