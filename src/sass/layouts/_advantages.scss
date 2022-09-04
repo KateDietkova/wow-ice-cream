@@ -33,9 +33,7 @@
 
   &::before {
     content: '';
-    display: flex;
-    width: 50px;
-    height: 50px;
+    display: block;
     border-radius: 50%;
     background-color: var(--accent-color);
     background-position: center;
@@ -45,30 +43,53 @@
   }
 
   &--cow::before {
-    display: flex;
+    display: block;
     width: 50px;
     height: 50px;
-    background-image: url('../images/advantages icons/cow.png');
+    background-image: url('../images/advantages icons/cow@1x.png');
     background-position: center;
     background-repeat: no-repeat;
   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &--cow::before {
+      background-image: url('../images/advantages icons/cow@2x.png');
+    }
+  }
 
   &--weight::before {
-    display: flex;
+    display: block;
     width: 50px;
     height: 50px;
-    background-image: url('../images/advantages icons/weight.png');
+    background-image: url('../images/advantages icons/weight@1x.png');
     background-position: center;
     background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &--weight::before {
+      background-image: url('../images/advantages icons/weight@2x.png');
+    }
   }
 
   &--ice-cream::before {
     display: flex;
-    bottom: 100px;
     width: 50px;
     height: 50px;
-    background-image: url('../images/advantages icons/ice-cream.png');
+    background-image: url('../images/advantages icons/ice-cream@1x.png');
     background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &--ice-cream::before {
+      background-image: url('../images/advantages icons/ice-cream@2x.png');
+    }
   }
 }
 
@@ -87,6 +108,7 @@
   @media screen and (min-width: 768px) {
     max-width: 138px;
   }
+
   @media screen and (min-width: 1200px) {
     max-width: 230px;
   }
