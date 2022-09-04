@@ -17,7 +17,7 @@
 }
 
 .about {
-    // background-color: var(--primary-background-color);
+    
     padding-top: 60px;
 }
 
@@ -108,18 +108,14 @@
             margin-right: 32px;
             width: 330px;
             height: 330px;
-            // top:70%;
-            // left: 20%;
-            // transform:translate(-50%, 0%);
+            
            
         }
         @media screen and (min-width: 1200px) {
             margin-right: 100px;
             width: 500px;
             height: 500px;
-            // left: 20%;
-            // top: 70%;
-            // transform:translate(-50%, 0%);
+            
         }
     }   
     .technology__pic {
@@ -133,18 +129,6 @@
         @media screen and (min-width: 1200px) {
             transform: translateY(39px);
         }
-
-
-        // position: absolute;
-        // top: 22px;
-
-        // @media screen and (min-width: 768px) {
-        //     top: 26px;
-        // }
-
-        // @media screen and (min-width: 1200px) {
-        //     top: 39px;
-        // }
 
     }
   
@@ -170,8 +154,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            // padding-left: 50px;
-            // padding-right: 50px;
+            
 
             @media screen and (min-width: 768px) {
                 align-items: flex-start;
