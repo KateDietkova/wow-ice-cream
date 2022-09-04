@@ -1,7 +1,11 @@
+.section_cust {
+    padding-bottom: 393px;
+}
+
 .contacts {
-    margin-top: 394px;
+    
     background-color: var(--primary-background-color);
-    padding-top: 0;
+    padding-top: 124px;
     padding-bottom: 0;  
 }
 
@@ -114,6 +118,17 @@
     .franchise-modal-open {
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .contacts{
+        position: relative;
+    }
+
+    .addresses__item--absolut{
+        position: absolute;
+        top: -345px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
