@@ -15,8 +15,7 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    justify-content: center;
-    gap: 80px;
+    justify-content: space-between;
   }
 }
 
@@ -118,7 +117,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 230px;
+    max-width: 276px;
     font-size: 16px;
     font-weight: 400;
   }
