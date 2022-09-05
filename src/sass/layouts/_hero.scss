@@ -11,7 +11,6 @@
 }
 
 .container--hero {
-  overflow: hidden;
   position: relative;
 }
 
@@ -87,85 +86,21 @@
 }
 
 .hero-list {
+  @extend %list;
   display: inline-flex;
-
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  column-gap: 16px;
 
   @media screen and (max-width: 767px) {
     margin-top: 32px;
-    column-gap: 16px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 20px;
-    column-gap: 16px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 40px;
     column-gap: 32px;
-  }
-}
-
-.hero-list__link {
-  font-family: var(--font-general);
-  text-decoration: none;
-}
-
-.hero-list__link--products {
-  color: var(--primary-darktext-color);
-  border: 2px solid;
-  border-color: var(--accent-color);
-
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    border-color: var(--button-hover-color);
-  }
-
-  @media screen and (max-width: 1199px) {
-    font-size: 8px;
-    line-height: 1.125;
-
-    padding: 7px 13px;
-
-    border-radius: 8px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.28;
-
-    padding: 12px 36px;
-
-    border-radius: 10px;
-  }
-}
-
-.hero-list__link--how-made {
-  font-weight: 600;
-  text-decoration-line: underline;
-  color: var(--accent-color);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: var(--button-hover-color);
-  }
-
-  @media screen and (max-width: 1199px) {
-    font-size: 8px;
-    line-height: 1.25;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.21;
   }
 }
 
@@ -201,27 +136,82 @@
   }
 }
 
-.hero__image--icecream {
-  @media screen and (max-width: 767px) {
-    bottom: -53px;
-    left: 10%;
-    width: 100%;
-    width: 276px;
+.image-wrapper {
+  position: absolute;
+
+  width: 170px;
+  height: 219px;
+  left: 29%;
+  bottom: 0px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 170px;
+    height: 219px;
+    // width: 100%;
+    // height: auto;
+
+    left: 140px;
+    bottom: 0px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    bottom: -75px;
-    left: 370px;
-    width: 270px;
-    height: 343px;
+    width: 257px;
+    height: 325px;
+
+    left: 418px;
+    bottom: -1px;
   }
 
   @media screen and (min-width: 1200px) {
-    bottom: -75px;
-    left: 608px;
-    width: 484px;
-    height: 593px;
+    width: 456px;
+    height: 561px;
+
+    left: 651px;
+    bottom: 0px;
   }
+}
+
+.glow-wrapper {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  @media screen and (max-width: 767px) {
+    left: -36px;
+    bottom: -120px;
+
+    width: 247px;
+    height: 392px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    left: -70px;
+    bottom: -110px;
+
+    width: 405px;
+    height: 515px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: -100px;
+    bottom: -150px;
+
+    width: 684px;
+    height: 842px;
+  }
+}
+
+.hero__image--icecream {
+  // @media screen and (max-width: 767px) {
+  //   width: 100%;
+  // }
+
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   width: 100%;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   width: 100%;
+  // }
 }
 
 .hero__image--plate-ice-cream {
