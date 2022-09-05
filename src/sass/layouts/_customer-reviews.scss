@@ -1,3 +1,16 @@
+
+.section--padding-bottom {
+    padding-bottom: 393px;
+    
+    @media screen and (min-width: 768px) {
+        padding-bottom: 384px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 196px;
+    }
+}
+
 //Swiper styles
 
 .swiper {
