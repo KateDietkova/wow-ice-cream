@@ -4,12 +4,6 @@
 .container-about {
     padding-left: 20px;
     padding-right: 20px;
-
-    @media screen and (min-width: 768px) {
-        padding-left: 33px;
-            padding-right: 33px;
-    }
-
             @media screen and (min-width: 1200px){
                 padding-left: 18px;
             padding-right: 18px;
@@ -19,7 +13,6 @@
 
 
 .about__label {
-    font-family: var(--font-general);
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
@@ -67,19 +60,13 @@
     }
 
     .technology {
-        @media screen and (max-width: 767px) {
-          display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: 767px) {
         flex-direction: column;  
         }
         
-        @media screen and (min-width: 768px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        
-        }
 
         @media screen and (min-width: 1200px) {
             justify-content: flex-start;
@@ -88,7 +75,7 @@
         }
 
     }
-    .technology__picture {
+    .technology__picture-container {
 
         display: flex;
         justify-content: center;
@@ -97,7 +84,7 @@
         width: 278px;
         height: 278px;
         border-radius: 50%;
-        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        background: linear-gradient(0deg, var(--product-opacity-yellow-background), var(--product-opacity-yellow-background)), #D9D9D9;
         box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
 
         @media screen and (min-width: 768px) {
@@ -114,8 +101,7 @@
             
         }
     }   
-    .technology__pic {
-
+    .technology__picture {
         transform: translateY(22px);
 
         @media screen and (min-width: 768px) {
@@ -130,17 +116,15 @@
   
         .technology__cow {
         box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-        border-radius: 1038.58px; 
+        border-radius: 50%; 
 
         @media screen and (min-width: 768px) {
             width: 330px;
             max-width: none;
-            border-radius: 1228.96px;
         }
 
         @media screen and (min-width: 1200px) {
             width: 490px;
-            border-radius: 1852.2px;
         }
 
         }
@@ -150,7 +134,27 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
+            width: 100%;
+            font-family: var(--font-general);
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.75;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: var(--primary-lighttext-color);
+    
+            @media screen and (min-width: 768px) {
+               width: 334px;
+                text-align: start;
+            }
+    
+            @media screen and (min-width: 1200px) {
+                width: 463px;
+                font-size: 16px;
+                line-height: 1.75;
+    
+            }
+
 
             @media screen and (min-width: 768px) {
                 align-items: flex-start;
@@ -160,54 +164,24 @@
         }
 
 
-    .technology-info__text {
-        width: 100%;
-        font-family: var(--font-general);
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.75;
-        text-align: center;
-        letter-spacing: 0.04em;
-        color: var(--primary-lighttext-color);
 
-        @media screen and (min-width: 768px) {
-           width: 334px;
-            text-align: start;
-        }
-
-        @media screen and (min-width: 1200px) {
-            width: 463px;
-            font-size: 16px;
-            line-height: 1.75;
-
-        }
-
-        }
-
-        .technology-info_paragraph:not(:last-child) {
-             margin-bottom: 4px;   
-            
-
-            @media screen and (min-width: 768px) {
-            margin-bottom: 8px;
-    
+        .technology-info_paragraph {
+            &:not(:last-child) {
+            margin-bottom: 4px;
             }
-        }
+            
+               @media screen and (min-width: 768px) {
+                     &:not(:last-child) {
+                               margin-bottom: 8px; 
+                      }
+                }
+            }
     
-        @media screen and (max-width: 767px){
-           .technology-info__text-hidden {
-            position: absolute;
-            white-space: nowrap;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            border: 0;
-            padding: 0;
-            clip: rect(0 0 0 0);
-            clip-path: inset(50%);
-            margin: -1px;
-        }
-        }
+
+            .technology-info__text--hidden {
+                @media screen and (max-width: 767px){
+                display: none
+                }
         
     .technology__button {
         margin-top: 20px;
@@ -216,10 +190,10 @@
         justify-content: center;
       
 
-        &:hover {
-            color: var(--primary-lighttext-color);
-            fill: var(--primary-lighttext-color);
-        }
+        // &:hover {
+        //     color: var(--primary-lighttext-color);
+            
+        // }
 
 
 
@@ -231,9 +205,8 @@
 
 
     }
-
-    .about__button-icon {
-        display: inline-block;
-        margin-left: 14px;
-        fill: var(--primary-lighttext-color);
     }
+    .about__button-icon {
+        margin-left: 14px;
+        stroke: currentColor;
+    } 
