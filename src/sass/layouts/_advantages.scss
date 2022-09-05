@@ -4,8 +4,6 @@
   background-color: var(--primary-background-color);
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .advantages-list {
@@ -17,8 +15,8 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    justify-content: space-around;
-    gap: 76px;
+    justify-content: center;
+    gap: 80px;
   }
 }
 
@@ -30,6 +28,9 @@
   letter-spacing: 0.04em;
   margin-bottom: 18px;
   color: var(--primary-lighttext-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -47,8 +48,6 @@
     height: 50px;
     background-color: var(--accent-color);
     background-position: center;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 16px;
   }
 
@@ -115,10 +114,12 @@
   @media screen and (min-width: 768px) {
     max-width: 138px;
     font-size: 14px;
+    font-weight: 400;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 230px;
     font-size: 16px;
+    font-weight: 400;
   }
 }
