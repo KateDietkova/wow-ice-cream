@@ -1,9 +1,11 @@
 .gallery {
+  outline: dashed;
+  border: 2px red;
 }
 .gallery-image__list {
   position: relative;
-  bottom: 175px;
   margin-bottom: 246px;
+  translate: -50px -150px;
 
   list-style-type: none;
 }
