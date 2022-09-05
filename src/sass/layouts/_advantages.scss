@@ -1,0 +1,125 @@
+.advatages {
+  @extend .section;
+  padding-top: 0;
+  background-color: var(--primary-background-color);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+  }
+}
+
+.advantages-list__uppertitle {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: calc(59px / 48px);
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-bottom: 18px;
+  color: var(--primary-lighttext-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    background-position: center;
+    margin-bottom: 16px;
+  }
+
+  &--cow::before {
+    display: block;
+    background-image: url('../images/advantages icons/cow@1x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &--cow::before {
+      background-image: url('../images/advantages icons/cow@2x.png');
+      background-size: 75%;
+    }
+  }
+
+  &--weight::before {
+    display: block;
+    background-image: url('../images/advantages icons/weight@1x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &--weight::before {
+      background-image: url('../images/advantages icons/weight@2x.png');
+      background-size: 75%;
+    }
+  }
+
+  &--ice-cream::before {
+    display: flex;
+    background-image: url('../images/advantages icons/ice-cream@1x.png');
+    background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &--ice-cream::before {
+      background-image: url('../images/advantages icons/ice-cream@2x.png');
+      background-size: 75%;
+    }
+  }
+}
+
+.advantages-list__text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--primary-lighttext-color);
+
+  @media screen and (max-width: 767px) {
+    max-width: 230px;
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 138px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 230px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
