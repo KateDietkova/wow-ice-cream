@@ -1,56 +1,76 @@
 .gallery {
   outline: dashed;
   border: 2px red;
-}
-.gallery-image__list {
-  position: relative;
-  margin-bottom: 246px;
-  translate: -50px -150px;
 
-  list-style-type: none;
+  position: relative;
+  padding-top: 0;
+  margin-bottom: 123px;
+  padding-bottom: 345px;
 }
+
+.gallery-image__list {
+  position: absolute;
+  top: -94px;
+  margin: auto;
+
+  height: 422px;
+
+  // медиазапрос
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    height: 130px;
+    right: 60px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    height: 327px;
+    right: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    height: 327px;
+    right: 65px;
+  }
+}
+
 .gallery-image__item {
 }
 
 .gallery-image__block--container {
-  border-radius: 24px;
   overflow: hidden;
 }
 
 .gallery-image__picture {
   display: flex;
   justify-content: flex-start;
+  margin-left: 65px;
 
   @media screen and (min-width: 320px) and (max-width: 479px) {
     justify-content: center;
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1200px) {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 
 .gallery-image__img {
-  position: absolute;
   width: 1010px;
-  height: auto;
+  border-radius: 24px;
 
   @media screen and (min-width: 320px) and (max-width: 479px) {
     width: 279px;
-    height: auto;
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 704px;
-    height: auto;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     width: 1010px;
-    height: auto;
   }
 }
