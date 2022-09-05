@@ -2,6 +2,7 @@
 .button-default {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
     border-width: 0;
     padding: 12px 34px;
@@ -68,9 +69,9 @@
 //Button-link Products 
 
 .button-products {
-    @extend %link;
     @extend .button-franchise;
     padding: 10px 34px;
+    text-decoration: none;
 
     @media screen and (max-width: 1199px) {
         min-width: 62px;
@@ -86,7 +87,10 @@
 // Button-link How it’s made?
 
 .button-made {
-    @extend %link;
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
@@ -107,6 +111,8 @@
     }
 
     @media screen and (max-width: 1199px) {
+        padding: 5px 0;
+
         font-size: 8px;
         line-height: 1.25;
     }

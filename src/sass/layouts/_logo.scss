@@ -1,0 +1,28 @@
+.logo {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    z-index: 500;
+
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    left: 32px;
+    top: 20px;
+    z-index: 500;
+
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    left: 16px;
+    top: 17px;
+    z-index: 500;
+
+    display: block;
+  }
+}

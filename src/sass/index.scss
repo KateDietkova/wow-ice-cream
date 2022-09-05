@@ -4,6 +4,11 @@
 @import './utils/variables';
 @import './utils/placeholders';
 @import './layouts/hero-header';
+@import './layouts/mobile-menu-button';
+@import './layouts/logo';
+@import './layouts/mobile-menu';
+@import './layouts/navigation';
+@import './layouts/hero';
 @import './layouts/products';
 @import './layouts/about';
 @import './layouts/advantages';
@@ -11,3 +16,10 @@
 @import './layouts/customer-reviews';
 @import './layouts/contacts';
 @import './layouts/footer';
+
+// Modals
+@import './modals/modal-ingredients';
+@import './modals/modal-buynow';
+@import './modals/modal-franchise';
+@import './modals/modal-locations';
+@import './modals/modal-readmore';
