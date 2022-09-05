@@ -5,31 +5,17 @@
 .container--header {
   position: relative;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 24px;
+    align-items: center;
+  }
 }
 
 .button--buy-now {
   @media screen and (max-width: 767px) {
     display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: baseline;
-    cursor: pointer;
-
-    padding: 12px 30px;
-
-    border-radius: 10px;
-    border-color: transparent;
-    background-color: var(--accent-color);
-
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-
-    margin-top: 24px;
-    margin-left: 31px;
   }
 
   @media screen and (min-width: 1200px) {

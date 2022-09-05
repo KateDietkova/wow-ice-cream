@@ -1,4 +1,4 @@
-<Header class="header" id="home">
+<header class="header" id="home">
 
     <!-- ====== Mobile Menu -->
     <div class="mobile-menu" data-menu>
@@ -23,8 +23,8 @@
                 </ul>
             </nav>
             <!-- ====== Button Buy now ====== -->
-            <button class="mobile-menu-button--buy-now" type="button">Buy now
-                <svg class="mobile-menu-button__icon" width="10" height="11">
+            <button class="mobile-menu-button--buy-now button" type="button">Buy now
+                <svg class="mobile-menu-button__icon-arrow" width="12" height="12">
                     <use href="./images/mobile-menu/burger.svg#arrow-little"></use>
                 </svg>
             </button>
@@ -41,19 +41,19 @@
         <a class="logo" href="./index.html">
             <picture>
                 <source
-                    srcset="./images/logo/logo-mobile/logo-mobile.png 1x, ./images/logo/logo-mobile/logo-mobile@2x.png 2x"
-                    media="(max-width: 767px)" />
-                <source
-                    srcset="./images/logo/logo-tablet/logo-tablet.png 1x, ./images/logo/logo-tablet/logo-tablet@2x.png 2x"
-                    media="(max-width: 1199px)" />
-                <source
                     srcset="./images/logo/logo-desktop/logo-desktop.png 1x, ./images/logo/logo-desktop/logo-desktop@2x.png 2x"
                     media="(min-width: 1200px)" />
+                <source
+                    srcset="./images/logo/logo-tablet/logo-tablet.png 1x, ./images/logo/logo-tablet/logo-tablet@2x.png 2x"
+                    media="(min-width: 768px)" />
+                <source
+                    srcset="./images/logo/logo-mobile/logo-mobile.png 1x, ./images/logo/logo-mobile/logo-mobile@2x.png 2x"
+                    media="(max-width: 767px)" />
                 <img class="logo__img" src="./images/logo/logo-mobile/logo-mobile.png" alt="Logo">
         </a>
         <!-- ====== Button Mobile menu open ====== -->
         <button type="button" class="mobile-menu-button--open" data-menu-open>
-            <svg width="20" height="12">
+            <svg width="32" height="32">
                 <use class="" href="./images/mobile-menu/burger.svg#burger"></use>
             </svg>
         </button>
@@ -75,111 +75,103 @@
             </li>
         </ul>
         <!-- ====== Button buy now ====== -->
-        <button class="button--buy-now" type="button">Buy now
-            <svg class="mobile-menu-button__icon" width="10" height="11">
+        <button class=" button button--buy-now" type="button">Buy now
+            <svg class="mobile-menu-button__icon-arrow" width="12" height="12">
                 <use href="./images/mobile-menu/burger.svg#arrow-little"></use>
             </svg>
         </button>
 
-</Header>
+</header>
 
-<main>
-
-    <section class="hero">
-        <div class="container container--hero">
-            <div class="hero__container">
-                <div class="hero__content-container">
-                    <h1 class="hero__title">
-                        ice cream made with <span class="hero-title hero__title--uppercase">passion</span>
-                    </h1>
-                    <ul class="hero__list">
-                        <li class="hero__item">
-                            <a class="hero__link hero__link--products" href="#products">Products</a>
-                        </li>
-                        <li>
-                            <a class="hero__link hero__link--how-made" href="#how-made">How it’s made?</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hero-text-wrapper--addition">
-                    <ul class="hero-text-wrapper__list">
-                        <li class="hero-text-wrapper__item--bold">
-                            <p class="hero-text-wrapper__text-bold">
-                                16
-                            </p>
-                        </li>
-                        <li class="hero-text-wrapper__item--normal">
-                            <p class=" hero-text-wrapper__text-normal">
-                                cafes
-                            </p>
-                        </li>
-                        <li class="hero-text-wrapper__item--bold">
-                            <p class="hero-text-wrapper__text-bold">
-                                23
-                            </p>
-                        </li>
-                        <li class="hero-text-wrapper__item--normal">
-                            <p class=" hero-text-wrapper__text-normal">
-                                food trucks
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <!-- ====== DOTS ====== -->
-                <picture>
-                    <source
-                        srcset="./images/hero/mobile-dots/mobile-dots.png 1x, ./images/hero/mobile-dots/mobile-dots@2x.png 2x"
-                        media="(max-width: 767px)" />
-                    <source
-                        srcset="./images/hero/tablet-dots/tablet-dots.png 1x, ./images/hero/tablet-dots/tablet-dots@2x.png 2x"
-                        media="(max-width: 1199px)" />
-                    <source
-                        srcset="./images/hero/desktop-dots/desktop-dots.png 1x, ./images/hero/desktop-dots/desktop-dots@2x.png 2x"
-                        media="(min-width: 1200px)" />
-                    <img class="hero__image hero__image--dots" src="./images/hero/mobile-dots/mobile-dots.png"
-                        alt="Many dots">
-                </picture>
-                <!-- ====== ICECREAM ====== -->
-                <picture>
-                    <source
-                        srcset="./images/hero/ice-cream-mobile/ice-cream-mobile.png 1x, ./images/hero/ice-cream-mobile/ice-cream-mobile@2x.png 2x"
-                        media="(max-width: 767px)" />
-                    <source
-                        srcset="./images/hero/ice-cream-tablet/ice-cream-tablet.png 1x, ./images/hero/ice-cream-tablet/ice-cream-tablet.png 2x"
-                        media="(max-width: 1199px)" />
-                    <source
-                        srcset="./images/hero/ice-cream-desktop/ice-cream-desktop.png 1x, ./images/hero/ice-cream-desktop/ice-cream-desktop.png 2x"
-                        media="(min-width: 1200px)" />
-                    <img class="hero__image hero__image--icecream"
-                        src="./images/hero/ice-cream-mobile/ice-cream-mobile.png" alt="Ice cream">
-                </picture>
-                <div>
-
-                </div>
+<section class="hero">
+    <div class="container container--hero">
+        <div class="hero__container">
+            <div class="hero__content-container">
+                <h1 class="hero__title">
+                    ice cream made with <span class="hero-title hero__title--uppercase">passion</span>
+                </h1>
+                <ul class="hero-list">
+                    <li class="hero-list__item">
+                        <a class="hero-list__link hero-list__link--products" href="#products">Products</a>
+                    </li>
+                    <li>
+                        <a class="hero-list__link hero-list__link--how-made" href="#how-made">How it’s made?</a>
+                    </li>
+                </ul>
             </div>
-            <div class="hero-text-wrapper">
-                <p class="hero-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                </p>
-                <a href="#products">
-                    <svg width="40" height="15">
-                        <use href="./images/mobile-menu/burger.svg#big-arrow"></use>
-                    </svg>
-                </a>
-            </div>
+
+            <ul class="hero-text-wrapper__list">
+                <li class="hero-text-wrapper__item--bold">
+                    <p class="hero-text-wrapper__text-bold">
+                        16
+                    </p>
+                    <p class=" hero-text-wrapper__text-normal">
+                        cafes
+                    </p>
+                </li>
+                <li class="hero-text-wrapper__item--normal">
+                    <p class="hero-text-wrapper__text-bold">
+                        23
+                    </p>
+                    <p class=" hero-text-wrapper__text-normal">
+                        food trucks
+                    </p>
+                </li>
+
+            </ul>
+
+            <!-- ====== DOTS ====== -->
+            <picture>
+                <source
+                    srcset="./images/hero/desktop-dots/desktop-dots.png 1x, ./images/hero/desktop-dots/desktop-dots@2x.png 2x"
+                    media="(min-width: 1200px)" />
+                <source
+                    srcset="./images/hero/tablet-dots/tablet-dots.png 1x, ./images/hero/tablet-dots/tablet-dots@2x.png 2x"
+                    media="(min-width: 768px)" />
+                <source
+                    srcset="./images/hero/mobile-dots/mobile-dots.png 1x, ./images/hero/mobile-dots/mobile-dots@2x.png 2x"
+                    media="(max-width: 767px)" />
+                <img class="hero__image hero__image--dots" src="./images/hero/mobile-dots/mobile-dots.png"
+                    alt="Many dots">
+            </picture>
             <!-- ====== ICECREAM ====== -->
             <picture>
                 <source
-                    srcset="./images/hero/plate-ice-cream-tablet/plate-ice-cream-tablet.png 1x, ./images/hero/plate-ice-cream-tablet/plate-ice-cream-tablet@2x.png 2x"
-                    media="(max-width: 1199px)" />
-                <source
-                    srcset="./images/hero/plate-ice-cream-desktop/plate-ice-cream-desktop.png 1x, ./images/hero/plate-ice-cream-desktop/plate-ice-cream-desktop@2x.png 2x"
+                    srcset="./images/hero/ice-cream-desktop/ice-cream-desktop.png 1x, ./images/hero/ice-cream-desktop/ice-cream-desktop.png 2x"
                     media="(min-width: 1200px)" />
-                <img class="hero__image hero__image--plate-ice-cream"
-                    src="./images/hero/plate-ice-cream-tablet/plate-ice-cream-tablet.png" alt="Ice cream">
+                <source
+                    srcset="./images/hero/ice-cream-tablet/ice-cream-tablet.png 1x, ./images/hero/ice-cream-tablet/ice-cream-tablet.png 2x"
+                    media="(min-width: 768px)" />
+                <source
+                    srcset="./images/hero/ice-cream-mobile/ice-cream-mobile.png 1x, ./images/hero/ice-cream-mobile/ice-cream-mobile@2x.png 2x"
+                    media="(max-width: 767px)" />
+                <img class="hero__image hero__image--icecream" src="./images/hero/ice-cream-mobile/ice-cream-mobile.png"
+                    alt="Ice cream">
             </picture>
-
         </div>
-    </section>
-</main>
+
+        <div class="hero-text-wrapper">
+            <p class="hero-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et
+            </p>
+            <a class="hero-text__link" href="#products">
+                <svg width="40" height="15">
+                    <use href="./images/mobile-menu/burger.svg#big-arrow"></use>
+                </svg>
+            </a>
+        </div>
+        <!-- ====== ICECREAM ====== -->
+        <picture>
+            <source
+                srcset="./images/hero/plate-ice-cream-desktop/plate-ice-cream-desktop.png 1x, ./images/hero/plate-ice-cream-desktop/plate-ice-cream-desktop@2x.png 2x"
+                media="(min-width: 1200px)" />
+            <source
+                srcset="./images/hero/plate-ice-cream-tablet/plate-ice-cream-tablet.png 1x, ./images/hero/plate-ice-cream-tablet/plate-ice-cream-tablet@2x.png 2x"
+                media="(min-width: 768px)" />
+            <img class="hero__image hero__image--plate-ice-cream"
+                src="./images/hero/plate-ice-cream-tablet/plate-ice-cream-tablet.png" alt="Ice cream">
+        </picture>
+
+    </div>
+</section>

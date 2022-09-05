@@ -1,8 +1,7 @@
 .mobile-menu-button--open {
   display: block;
-  width: 20px;
-  height: 12px;
-  line-height: 0;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
 
   border: none;
@@ -11,11 +10,13 @@
   padding: 0;
 
   @media screen and (max-width: 767px) {
-    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: auto;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 40px;
+    margin-left: auto;
+    margin-right: 32px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -52,34 +53,12 @@
 }
 
 .mobile-menu-button--buy-now {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-    padding: 12px 30px;
-    border-radius: 10px;
-    border-color: transparent;
-    background-color: var(--accent-color);
-    margin: 40px 0 0;
-    max-width: 152px;
-
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-  }
-
   @media screen and (min-width: 768px) {
     display: none;
   }
-
-  &:hover,
-  &:focus {
-    background-color: var(--button-hover-color);
-  }
 }
 
-.mobile-menu-button__icon {
-  display: inline-block;
-  margin-left: 14px;
+.mobile-menu-button__icon-arrow {
+  margin-left: 8px;
+  stroke: currentColor;
 }

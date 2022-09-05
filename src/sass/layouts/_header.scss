@@ -2,20 +2,6 @@
   background-color: var(--primary-background-color);
 }
 
-.mobile-menu-button {
-  display: block;
-  width: 20px;
-  height: 12px;
-
-  border: none;
-  background: transparent;
-  cursor: pointer;
-
-  margin-top: 20px;
-  padding: 0;
-  line-height: 0;
-}
-
 .logo {
   display: block;
   margin-top: 12px;
@@ -44,26 +30,14 @@
   overflow: hidden;
 }
 
-.hero-title-container {
-  display: inline-block;
-
-  max-width: 247px;
-
-  padding-top: 61px;
-  padding-bottom: 239px;
-
-  margin: 0;
-}
-
 .hero-title {
   font-family: var(--font-title);
-  font-weight: 400;
   font-size: 26px;
   line-height: 1.27;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: var(--secondary-lighttext-color);
+  color: var(--primary-lighttext-color);
 }
 
 .hero-title--uppercase {
@@ -75,29 +49,14 @@
   display: inline-flex;
 
   column-gap: 16px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @extend %list;
 
   margin-top: 32px;
 }
 
 .hero-link {
   font-family: var(--font-general);
-
-  text-decoration: none;
-}
-
-.hero-link--products {
-  color: var(--primary-darktext-color);
-  font-size: 8px;
-  line-height: 1.125;
-
-  padding: 7px 13px;
-
-  border: 2px solid;
-  border-color: var(--accent-color);
-  border-radius: 8px;
+  @extend %link;
 }
 
 .hero-link--how-made {
