@@ -1,0 +1,63 @@
+.mobile-menu-button--open {
+  display: block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.mobile-menu-button--close {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    padding: 0;
+    line-height: 0;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+
+    padding: 0;
+    line-height: 0;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+}
+
+.mobile-menu-button--buy-now {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu-button__icon-arrow {
+  margin-left: 8px;
+  stroke: currentColor;
+}

@@ -1,0 +1,38 @@
+.header {
+  background-color: var(--primary-background-color);
+}
+
+.container--header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 24px;
+    align-items: center;
+  }
+}
+
+.button--buy-now {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 12px 30px;
+
+    margin-top: 28px;
+    margin-left: 0;
+  }
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+  }
+}
