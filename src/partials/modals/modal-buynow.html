@@ -1,0 +1,150 @@
+<div class="backdrop" data-modal>
+  <div class="modal-window">
+    <button type="button" class="modal-window__close-btn" data-modal-close>
+      <svg class="modal-window__icon-close" width="16px" height="16px">
+        <use href="./images/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-window__title">Buy now</h2>
+    <ul class="buy-list">
+      <li class="buy-list__card buy-list__card_green_background">
+        <div class="buy-list__img-wrapper buy-list__img_wrapper_green">
+          <picture>
+            <source
+              srcset="
+                ./images/products/desctop-img/dt-product1.jpg    1x,
+                ./images/products/desctop-img/dt-product1@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+
+            <source
+              srcset="
+                ./images/products/tab-img/tab-product1.jpg    1x,
+                ./images/products/tab-img/tab-product1@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+
+            <source
+              srcset="
+                ./images/products/mobile-img/mb-product1.jpg    1x,
+                ./images/products/mobile-img/mb-product1@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+
+            <img
+              src="./images/products/mobile-img/mb-product1.jpg"
+              alt="Product photo"
+              class="buy-list__img"
+            />
+          </picture>
+        </div>
+        <h3 class="buy-list__name">ice cream</h3>
+      </li>
+      <li class="buy-list__card buy-list__card_yellow_background">
+        <div class="buy-list__img-wrapper buy-list__img_wrapper_yellow">
+          <picture>
+            <source
+              srcset="
+                ./images/products/desctop-img/dt-product2.jpg    1x,
+                ./images/products/desctop-img/dt-product2@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+
+            <source
+              srcset="
+                ./images/products/tab-img/tab-product2.jpg    1x,
+                ./images/products/tab-img/tab-product2@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+
+            <source
+              srcset="
+                ./images/products/mobile-img/mb-product2.jpg    1x,
+                ./images/products/mobile-img/mb-product2@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+
+            <img
+              src="./images/products/mobile-img/mb-product2.jpg"
+              alt="Product photo"
+              class="buy-list__img"
+            />
+          </picture>
+        </div>
+        <h3 class="buy-list__name">ice coffee</h3>
+      </li>
+      <li class="buy-list__card buy-list__card_red_background">
+        <div class="buy-list__img-wrapper buy-list__img_wrapper_red">
+          <picture>
+            <source
+              srcset="
+                ./images/products/desctop-img/dt-product3.jpg    1x,
+                ./images/products/desctop-img/dt-product3@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+
+            <source
+              srcset="
+                ./images/products/tab-img/tab-product3.jpg    1x,
+                ./images/products/tab-img/tab-product3@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+
+            <source
+              srcset="
+                ./images/products/mobile-img/mb-product3.jpg    1x,
+                ./images/products/mobile-img/mb-product3@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+
+            <img
+              src="./images/products/mobile-img/mb-product3.jpg"
+              alt="Product photo"
+              class="buy-list__img"
+            />
+          </picture>
+        </div>
+        <h3 class="buy-list__name">milkshakes</h3>
+      </li>
+    </ul>
+    <form class="modal-form">
+      <label class="modal-form__label">
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Name"
+            class="modal-form__input"
+            required
+          />
+      </label>
+      <label class="modal-form__label">
+          <input
+            type="tel"
+            name="user_phone"
+            placeholder="Phone"
+            class="modal-form__input"
+            required
+          />
+      </label>
+      <label class="modal-form__comment-label">
+        <textarea
+          name="user_comment"
+          placeholder="Comment"
+          class="modal-form__comment"
+        ></textarea>
+      </label>
+      <button type="submit" class="modal-form__submit">Submit</button>
+    </form>
+  </div>
+</div>
+  </div>
+</div>
