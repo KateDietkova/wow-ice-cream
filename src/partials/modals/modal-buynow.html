@@ -84,15 +84,18 @@
             </li>
         </ul>
         <form class="modal-form">
-            <label class="modal-form__label">
-                <input type="text" name="user_name" placeholder="Name" class="modal-form__input" required />
-            </label>
-            <label class="modal-form__label">
-                <input type="tel" name="user_phone" placeholder="Phone" class="modal-form__input" required />
-            </label>
-            <label class="modal-form__comment-label">
-                <textarea name="user_comment" placeholder="Comment" class="modal-form__comment"></textarea>
-            </label>
+            <div class="form-order__field">
+                <input type="text" name="user_name" class="modal-form__input" placeholder="Name" id="name" required />
+                <label class="modal-form__label" for="name">Name</label>
+            </div>
+            <div class="form-order__field">
+                <input type="tel" name="user_phone" class="modal-form__input" placeholder="Phone" required />
+                <label class="modal-form__label">Phone</label>
+            </div>
+            <div class="form-order__field form-order__field--comment">
+                <textarea name="user_comment" class="modal-form__input modal-form__comment" placeholder="Comment" rows="3"></textarea>
+                <label class="modal-form__label">Comment</label>
+            </div>
             <button type="submit" class="modal-form__submit">Submit</button>
         </form>
     </div>
