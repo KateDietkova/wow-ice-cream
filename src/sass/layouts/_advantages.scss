@@ -6,6 +6,14 @@
   background-color: var(--primary-background-color);
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 204px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 180px;
+  }
 }
 
 .advantages-list {
