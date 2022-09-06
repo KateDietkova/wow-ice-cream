@@ -33,8 +33,13 @@
   //Input field background color
   --input-background: rgba(248, 210, 78, 0.1);
 
-  // Buttons color
+  //Modal background
+  --primary-white-color: #ffffff;
 
+  // Buttons color
   --button-hover-color: #0a8817;
   --button-disable-color: #ababab;
+
+  // Backdrop-color
+  --backdrop-color: rgba(0, 0, 0, 0.2);
 }
