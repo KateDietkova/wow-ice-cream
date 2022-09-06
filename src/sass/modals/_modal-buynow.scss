@@ -133,8 +133,37 @@
     flex-direction: column;
 }
 
+.form-order__field {
+    position: relative;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        width: 368px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
 .modal-form__label {
-    margin-bottom: 12px;
+    position: absolute;
+    padding-left: 16px;
+
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: var(--primary-darktext-color);
+    transform: translateY(10px);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .form-order__field:focus-within & {
+        transform: translateY(-20px);
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+    }
 }
 
 .modal-form__input {
@@ -145,20 +174,13 @@
     border-radius: 10px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &::placeholder {
-        font-size: 12px;
-        line-height: 1.4;
-        letter-spacing: 0.01em;
-        color: var(--primary-darktext-color);
-    }
-
     &:focus {
         outline: none;
         border-color: var(--accent-color);
     }
 }
 
-.modal-form__comment-label {
+.form-order__field--comment {
     margin-bottom: 24px;
 }
 
@@ -172,13 +194,6 @@
     border: 1px solid var(--primary-background-color);
     border-radius: 10px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &::placeholder {
-        font-size: 12px;
-        line-height: 1.4;
-        letter-spacing: 0.01em;
-        color: #000000;
-    }
 
     &:focus {
         outline: none;
