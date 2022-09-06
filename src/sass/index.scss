@@ -3,11 +3,11 @@
 @import './swiper-bundle';
 @import './utils/variables';
 @import './utils/placeholders';
-@import './layouts/hero-header';
-@import './layouts/mobile-menu-button';
-@import './layouts/logo';
-@import './layouts/mobile-menu';
-@import './layouts/navigation';
+@import './layouts/header/hero-header';
+@import './layouts/header/mobile-menu-button';
+@import './layouts/header/logo';
+@import './layouts/header/mobile-menu';
+@import './layouts/header/navigation';
 @import './layouts/hero';
 @import './layouts/products';
 @import './layouts/about';

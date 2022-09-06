@@ -1,0 +1,84 @@
+<header class="header" id="home">
+
+    <!-- ====== Mobile Menu -->
+    <div class="mobile-menu" data-menu>
+        <div class="mobile-menu__container">
+            <nav class="mobile-menu-navigation">
+                <ul class="mobile-menu-navigation__list">
+                    <li class="mobile-menu-navigation__item">
+                        <a class="mobile-menu-navigation__link" href="#home">Home</a>
+                    </li>
+                    <li class="mobile-menu-navigation__item">
+                        <a class="mobile-menu-navigation__link" href="#about">About us</a>
+                    </li>
+                    <li class="mobile-menu-navigation__item">
+                        <a class="mobile-menu-navigation__link" href="#how-made">How it’s made?</a>
+                    </li>
+                    <li class="mobile-menu-navigation__item">
+                        <a class="mobile-menu-navigation__link" href="#products">Our products</a>
+                    </li>
+                    <li class="mobile-menu-navigation__item">
+                        <a class="mobile-menu-navigation__link" href="#contacts">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- ====== Button Buy now ====== -->
+            <button class="mobile-menu-button--buy-now button" type="button">Buy now
+                <svg class="mobile-menu-button__icon-arrow" width="12" height="12">
+                    <use href="./images/icons.svg#arrow-little"></use>
+                </svg>
+            </button>
+            <!-- ====== Button close ====== -->
+            <button type="button" class="mobile-menu-button--close" data-menu-close>
+                <svg width="32" height="32">
+                    <use href="./images/icons.svg#mobile-menu-button--close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- ====== Header ====== -->
+    <div class="container container--header">
+        <a class="logo" href="./index.html">
+            <picture>
+                <source
+                    srcset="./images/logo/logo-desktop/logo-desktop.png 1x, ./images/logo/logo-desktop/logo-desktop@2x.png 2x"
+                    media="(min-width: 1200px)" />
+                <source
+                    srcset="./images/logo/logo-tablet/logo-tablet.png 1x, ./images/logo/logo-tablet/logo-tablet@2x.png 2x"
+                    media="(min-width: 768px)" />
+                <source
+                    srcset="./images/logo/logo-mobile/logo-mobile.png 1x, ./images/logo/logo-mobile/logo-mobile@2x.png 2x"
+                    media="(max-width: 767px)" />
+                <img class="logo__img" src="./images/logo/logo-mobile/logo-mobile.png" alt="Logo">
+        </a>
+        <!-- ====== Button Mobile menu open ====== -->
+        <button type="button" class="mobile-menu-button--open" data-menu-open>
+            <svg width="32" height="32">
+                <use class="" href="./images/icons.svg#burger"></use>
+            </svg>
+        </button>
+        <ul class="navigation">
+            <li class="navigation__item">
+                <a class="navigation__link" href="#home">Home</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#about">About us</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#how-made">How it’s made?</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#products">Our products</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#contacts">Contact</a>
+            </li>
+        </ul>
+        <!-- ====== Button buy now ====== -->
+        <button class=" button button--buy-now" type="button">Buy now
+            <svg class="mobile-menu-button__icon-arrow" width="12" height="12">
+                <use href="./images/icons.svg#arrow-little"></use>
+            </svg>
+        </button>
+    </div>
+</header>
