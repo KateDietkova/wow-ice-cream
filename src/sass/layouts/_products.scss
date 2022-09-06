@@ -17,7 +17,7 @@
 
 .products__title {
   font-family: var(--font-title);
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.26;
   text-align: center;
   letter-spacing: 0.04em;
@@ -29,6 +29,7 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 200px;
+    font-size: 34px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -224,6 +225,7 @@
   background-color: transparent;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 
   &:hover {
     .products__btn-icon {
