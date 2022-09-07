@@ -1,0 +1,73 @@
+.background-sections {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position-y: 0;  
+    background-size: 100% 940px;
+    
+    
+    @media screen and (max-width: 479px) {
+        background-image: url('../images/background-sections/background-mobile-big.jpg');
+    }
+    
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        & {
+            background-image: url('../images/background-sections/background-mobile-big@2x.jpg');
+        }
+    }
+
+
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+        background-image: url('../images/background-sections/background-tab-big.jpg');
+        background-size: 768px 958px;
+
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url('../images/background-sections/background-tab-big@2x.jpg');
+            }
+        }
+    }
+
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        background-image: url('../images/background-sections/background-dt-big@2x.jpg');
+        background-size: 1200px 850px;
+
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url('../images/background-sections/background-dt-big@2x.jpg');
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-color: none;
+    }
+}
+
+
+.background-with-gallery {
+    background-color: var(--primary-background-color);
+    @media screen and (min-width: 1200px) {
+        background-image: url('../images/background-sections/background-dt-big.jpg');
+        background-size: 100% 1020px;
+        background-repeat: no-repeat;
+
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url('../images/background-sections/background-dt-big@2x.jpg');
+            }
+        }
+    }
+}

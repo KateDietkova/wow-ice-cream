@@ -9,6 +9,11 @@
         var(--primary-lighttext-color) 50% 100%);
   }
 
+  @media screen and (min-width: 1200px){
+    background-image: linear-gradient(var(--primary-background-color) 20%,
+        rgba(255, 255, 255, 0) 20% 100%);
+  }
+
 }
 
 .gallery-wrapper {
