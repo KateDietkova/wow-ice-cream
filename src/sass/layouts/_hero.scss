@@ -87,7 +87,7 @@
 
 .hero-list {
   @extend %list;
-  display: inline-flex;
+  display: flex;
   column-gap: 16px;
 
   @media screen and (max-width: 767px) {
