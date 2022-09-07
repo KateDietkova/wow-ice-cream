@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const modals = ['data-locations-modal', 'data-howmade-modal', 'data-buynow-modal', 'data-franchise-modal'];
+    const modals = ['data-locations-modal', 'data-howmade-modal', 'data-buynow-modal', 'data-franchise-modal', 'data-ingredients-modal'];
 
     modals.forEach(element => {
         const openModalSelector = element + "-open";
