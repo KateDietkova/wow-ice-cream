@@ -135,7 +135,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 220px;
     font-family: var(--font-general);
     font-weight: 400;
     font-size: 12px;
@@ -167,15 +167,15 @@
 
 
 .technology-info_paragraph {
-    &:not(:last-child) {
-        margin-bottom: 4px;
-    }
+    margin-bottom: 4px;
             
     @media screen and (min-width: 768px) {
-        &:not(:last-child) {
-                margin-bottom: 8px; 
-        }
+        margin-bottom: 8px; 
     }
+}
+
+.technology-info_paragraph--no-margin-bottom {
+    margin-bottom: 0;
 }
     
 
