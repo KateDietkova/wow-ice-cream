@@ -87,6 +87,10 @@
     border-bottom: 1px solid var(--lines-reviews-color);
 }
 
+.address-contacts {
+   @extend %list;
+}
+
 .addresses__link{
     display: block;
 
@@ -97,6 +101,10 @@
     color: var(--primary-darktext-color);
 
     text-decoration: none;
+}
+
+.button-wrapper {
+    @extend %list;
 }
 
 .button--contacts-style {
