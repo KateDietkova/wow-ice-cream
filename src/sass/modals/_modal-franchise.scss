@@ -1,0 +1,118 @@
+.modal__text {
+    margin-bottom: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--primary-darktext-color);
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 32px;
+
+        font-size: 16px;
+    }
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-order__field {
+    position: relative;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        width: 368px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+.modal-form__input {
+    padding: 11px 16px;
+    width: 100%;
+    background: var(--input-background);
+    border: 1px solid var(--primary-background-color);
+    border-radius: 10px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+        color: var(--input-background);
+    }
+
+    &:placeholder-shown {
+        border-color: var(--primary-background-color);
+    }
+}
+
+.modal-form__label {
+    position: absolute;
+    left: 16px;
+    top: 10px;
+
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: var(--primary-darktext-color);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal-form__input:focus+&,
+    .modal-form__input:not(:placeholder-shown)+& {
+        transform: translateY(-30px);
+    }
+
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+    }
+}
+
+.form-order__field--comment {
+    margin-bottom: 24px;
+}
+
+.modal-form__comment {
+    display: block;
+    padding: 8px 12px;
+    width: 100%;
+    resize: none;
+    background: var(--input-background);
+    border: 1px solid var(--primary-background-color);
+    border-radius: 10px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+        color: var(--input-background);
+    }
+
+    &:placeholder-shown {
+        border-color: var(--primary-background-color);
+    }
+
+}
+
+.modal-form__submit {
+    @extend .button;
+
+    display: flex;
+    width: 150px;
+    text-decoration: none;
+    margin: 0 auto;
+}
