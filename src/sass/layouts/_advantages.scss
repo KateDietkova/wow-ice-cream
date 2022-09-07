@@ -27,6 +27,14 @@
   }
 }
 
+.advantages-list__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
+}
+
 .advantages-list__uppertitle {
   font-weight: 700;
   font-size: 38px;
@@ -115,7 +123,6 @@
 
   @media screen and (max-width: 767px) {
     max-width: 230px;
-    margin-bottom: 28px;
   }
 
   @media screen and (min-width: 768px) {
