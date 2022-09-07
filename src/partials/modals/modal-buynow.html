@@ -1,0 +1,102 @@
+<div class="backdrop is-hidden" data-buynow-modal>
+    <div class="modal modal-window">
+        <button type="button" class="button-close" data-buynow-modal-close>
+            <svg class="button-close__icon" width="20" height="20">
+                <use href="./images/icons.svg#modal-close"></use>
+            </svg>
+            <svg class="button-close__icon button-close__icon--little" width="16" height="16">
+                <use href="./images/icons.svg#close-little"></use>
+            </svg>
+        </button>
+        <h2 class="modal-window__title">Buy now</h2>
+        <ul class="buy-list">
+            <li class="buy-list__card buy-list__card_green_background" tabindex="0">
+                <div class="buy-list__img-wrapper buy-list__img_wrapper_green">
+                    <picture>
+                        <source srcset="
+                            ./images/products/desctop-img/dt-product1.png    1x,
+                            ./images/products/desctop-img/dt-product1@2x.png 2x
+                            " media="(min-width: 1200px)" />
+
+                        <source srcset="
+                            ./images/products/tab-img/tab-product1.png    1x,
+                            ./images/products/tab-img/tab-product1@2x.png 2x
+                            " media="(min-width: 768px)" />
+
+                        <source srcset="
+                            ./images/products/mobile-img/mb-product1.png    1x,
+                            ./images/products/mobile-img/mb-product1@2x.png 2x
+                            " media="(max-width: 767px)" />
+
+                        <img src="./images/products/mobile-img/mb-product1.png" alt="Product photo"
+                            class="buy-list__img" />
+                    </picture>
+                </div>
+                <h3 class="buy-list__name">ice cream</h3>
+            </li>
+            <li class="buy-list__card buy-list__card_yellow_background" tabindex="0">
+                <div class="buy-list__img-wrapper buy-list__img_wrapper_yellow">
+                    <picture>
+                        <source srcset="
+                            ./images/products/desctop-img/dt-product2.png    1x,
+                            ./images/products/desctop-img/dt-product2@2x.png 2x
+                            " media="(min-width: 1200px)" />
+
+                        <source srcset="
+                            ./images/products/tab-img/tab-product2.png    1x,
+                            ./images/products/tab-img/tab-product2@2x.png 2x
+                            " media="(min-width: 768px)" />
+
+                        <source srcset="
+                            ./images/products/mobile-img/mb-product2.png    1x,
+                            ./images/products/mobile-img/mb-product2@2x.png 2x
+                            " media="(max-width: 767px)" />
+
+                        <img src="./images/products/mobile-img/mb-product2.png" alt="Product photo"
+                            class="buy-list__img" />
+                    </picture>
+                </div>
+                <h3 class="buy-list__name">ice coffee</h3>
+            </li>
+            <li class="buy-list__card buy-list__card_red_background" tabindex="0">
+                <div class="buy-list__img-wrapper buy-list__img_wrapper_red">
+                    <picture>
+                        <source srcset="
+                            ./images/products/desctop-img/dt-product3.png    1x,
+                            ./images/products/desctop-img/dt-product3@2x.png 2x
+                            " media="(min-width: 1200px)" />
+
+                        <source srcset="
+                            ./images/products/tab-img/tab-product3.png    1x,
+                            ./images/products/tab-img/tab-product3@2x.png 2x
+                            " media="(min-width: 768px)" />
+
+                        <source srcset="
+                            ./images/products/mobile-img/mb-product3.png    1x,
+                            ./images/products/mobile-img/mb-product3@2x.png 2x
+                            " media="(max-width: 767px)" />
+
+                        <img src="./images/products/mobile-img/mb-product3.png" alt="Product photo"
+                            class="buy-list__img" />
+                    </picture>
+                </div>
+                <h3 class="buy-list__name">milkshakes</h3>
+            </li>
+        </ul>
+        <form class="modal-form">
+            <div class="form-order__field">
+                <input type="text" name="user_name" class="modal-form__input" placeholder="Name" id="name" required />
+                <label class="modal-form__label" for="name">Name</label>
+            </div>
+            <div class="form-order__field">
+                <input type="tel" name="user_phone" class="modal-form__input" placeholder="Phone" required />
+                <label class="modal-form__label">Phone</label>
+            </div>
+            <div class="form-order__field form-order__field--comment">
+                <textarea name="user_comment" class="modal-form__input modal-form__comment" placeholder="Comment" rows="3"></textarea>
+                <label class="modal-form__label">Comment</label>
+            </div>
+            <button type="submit" class="modal-form__submit">Submit</button>
+        </form>
+    </div>
+</div>

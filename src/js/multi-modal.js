@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const modals = ['data-locations-modal', 'data-howmade-modal', 'data-buynow-modal'];
+    const modals = ['data-locations-modal', 'data-howmade-modal', 'data-buynow-modal', 'data-franchise-modal', 'data-ingredients-modal'];
 
     modals.forEach(element => {
         const openModalSelector = element + "-open";
         const closeModalSelector = element + "-close";
 
-        const openModalBtn = document.querySelector("[" + openModalSelector + "]");
-        const closeModalBtn = document.querySelector("[" + closeModalSelector + "]");
+        const openModalBtns = document.querySelectorAll("[" + openModalSelector + "]");
+        const closeModalBtns = document.querySelectorAll("[" + closeModalSelector + "]");
         const modal = document.querySelector("[" + element + "]");
 
         if (!modal) logModalError("Can`t find Modal with attribute " + modal);
-        if (!openModalBtn) logModalError("Can`t find Open modal button with attribute " + openModalSelector);
-        if (!closeModalBtn) logModalError("Can`t find Close modal button with attribute " + closeModalSelector);
-        if (!modal || !openModalBtn || !closeModalBtn) return;
+        if (openModalBtns.length === 0) logModalError("Can`t find Open modal button with attribute " + openModalSelector);
+        if (closeModalBtns.length === 0) logModalError("Can`t find Close modal button with attribute " + closeModalSelector);
+        if (!modal || openModalBtns.length === 0 || closeModalBtns.length === 0) return;
 
-        openModalBtn.addEventListener("click", toggleModal);
-        closeModalBtn.addEventListener("click", toggleModal);
+        openModalBtns.forEach(openBtn => openBtn.addEventListener("click", toggleModal));
+        closeModalBtns.forEach(closeBtn =>  closeBtn.addEventListener("click", toggleModal));
 
         function toggleModal() {
             document.body.classList.toggle("modal-open")

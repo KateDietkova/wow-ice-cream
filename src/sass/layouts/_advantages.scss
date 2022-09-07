@@ -4,14 +4,6 @@
   background-color: var(--primary-background-color);
   display: flex;
   flex-wrap: wrap;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 204px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 180px;
-  }
 }
 
 .advantages-list {
@@ -24,6 +16,14 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.advantages-list__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
   }
 }
 
@@ -115,7 +115,6 @@
 
   @media screen and (max-width: 767px) {
     max-width: 230px;
-    margin-bottom: 28px;
   }
 
   @media screen and (min-width: 768px) {
